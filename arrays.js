@@ -71,6 +71,40 @@ arr1.forEach((value,index,arr)=>{
 })
 
 
+let arr2 =[1,23,45,12,67,89,9,34,56,7];
+let newArr=[];
+for(let i=0;i<arr2.length;i++){
+    let element =arr2[i];
+    newArr.push(element**2);
+}
+console.log(newArr);
+
+//map doing same task with map
+let newArr2=arr2.map(i=>{
+    return i**2;
+})
+console.log(newArr2);
+
+//filter
+const greaterThan7=(e=>{
+    if(e>7){
+        return true;
+    }
+    return false;
+})
+console.log(arr.filter(greaterThan7));
+
+//reduce 
+
+const red=((a,b)=>{
+    return a+b;
+})
+console.log(arr1.reduce(red));
+
+//array.from
+let name="Gaurav";
+let crt=Array.from(name);
+console.log(crt);
 
 
 
