@@ -57,6 +57,20 @@ let num1= [1,2,3,4,5,6,7,8,9,0];
 num1.splice(3,2,23,45,67);//3 is the starting position 2 is the no. of elements to delete 23,45,67 will be added from index 3
 console.log(num1);
 
+console.log(num.reverse());
+
+//loop in array
+let arr1 =[1,23,45,12,67,89,9,34,56,7]
+console.log(arr1);
+for(let i=0;i<arr1.length;i++){
+    console.log(arr1[i]);
+}
+
+arr1.forEach((value,index,arr)=>{
+    console.log(value,index,arr);
+})
+
+
 
 
 
