@@ -16,3 +16,9 @@ document.getElementById("nami").style.backgroundColor="orange";
 document.getElementById("nami").style.color="red";
 
 document.querySelector(".box").style.backgroundColor="blue";//it will change the first box color to blue
+
+document.querySelector("#pink").style.backgroundColor="purple";//it will change the pink box color to purple
+
+document.querySelectorAll(".box").forEach((e)=>{
+    e.style.backgroundColor="green";
+})
