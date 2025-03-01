@@ -106,6 +106,10 @@ let name="Gaurav";
 let crt=Array.from(name);
 console.log(crt);
 
-
+let rand;
+rand =Math.random();//generates random no. between 0 and 1
+console.log(rand);
+let rand1 =Math.floor(Math.random()*10)+1;
+console.log(rand1);
 
 
