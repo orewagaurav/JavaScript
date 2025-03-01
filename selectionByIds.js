@@ -20,5 +20,9 @@ document.querySelector(".box").style.backgroundColor="blue";//it will change the
 document.querySelector("#pink").style.backgroundColor="purple";//it will change the pink box color to purple
 
 document.querySelectorAll(".box").forEach((e)=>{
-    e.style.backgroundColor="green";
+    e.style.backgroundColor="light_purple";
 })
+
+document.getElementById("pink").style.color="red";
+
+// document.querySelector(".box").innerHTML;
