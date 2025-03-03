@@ -2,38 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom & Bom</title>
+    <meta name="viewport" content="width=<src>, initial-scale=1.0">
+    <title>Events</title>
     <style>
         .box{
-            height: 60px;
-            width: 60px;
-            border:2px solid black;
-            margin:20px;
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
             padding: 10px;
         
         }
-        .container{
-            margin-top:50px;
-            display:flex;
-            justify-content:space-around;
-            height: 80vh;
-            background-color:grey;
+        .button{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            
+            
         }
-
     </style>
 </head>
 <body>
-    <div class = container>
-        <div class="box">Zoro Luffy 1</div>
-        <div class="box">Nami Robin 2</div>
-        <div id= "pink" class="box">Shanji Gimbe 2.5</div>
-        <div class="box">Brook Chooper 3</div>
-        <div class="box">oda onepice 4</div>
-        <div id="nami" class="box">Eren Mikasa 5</div>
-
+    <div class="container">
+        <div class="box">Hey I am a Box</div>
     </div>
-    <script src="randomColor.js"></script>
-    
+    <div class="button">
+    <button id="btn">Click</button>
+    <button id ="btn2">dblclick</button>
+    <button id="btn3">mouseover</button>
+    </div>
+    <script src="events.js"></script>
 </body>
 </html>
