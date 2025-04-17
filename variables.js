@@ -75,3 +75,11 @@ obj.isStudent=false;
 obj.name="Raj";
 obj.age=21;
 console.log(obj);
+
+const accountId = "1234";
+let name34 = "Gaurav";
+let work34 = "SWE";
+var roll234 = 23;
+//  accountId =345;
+roll = 425;
+console.table([accountId,name34,work34,roll234]);
