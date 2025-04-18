@@ -123,7 +123,33 @@ arrr.shift();
 
 const newArrr= arrr.join();
 
-console.log(arrr);
-console.log(newArrr);
-console.log(typeof(newArrr));
-console.log(typeof(arrr));
+// console.log(arrr);
+// console.log(newArrr);
+// console.log(typeof(newArrr));
+// console.log(typeof(arrr));
+
+const spcl = [9,8,7,6,5,4,3,2,1];
+const newSpcl1 = spcl.slice(1,3); //does not change og array
+
+console.log(newSpcl1);
+console.log("A",spcl);
+
+const newSpcl2 = spcl.splice(1,3);//changes og array by removing spliced value plus includes last range
+
+console.log(newSpcl2);
+console.log("A",spcl);
+
+const marvel= ["Thor","Captain","Ironman"];
+
+const dc = ["Superman","Batman","Aquaman"];
+// console.log(marvel);
+// console.log(dc);
+
+// marvel.push(dc);
+// console.log(marvel);
+
+let newHero=marvel.concat(dc);
+console.log(newHero)
+
+const newSpread = [...marvel,...dc,...arrr];//merge two or more array
+console.log(newSpread);
