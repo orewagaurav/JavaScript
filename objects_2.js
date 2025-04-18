@@ -38,6 +38,14 @@ const obj = {...fbUser,...igUser};
 const obj2 = Object.assign({},fbUser,igUser);  //(target,src,src)
 // console.log(obj2);
 
-console.log(Object.keys(igUser));
-console.log(Object.values(igUser));
+// console.log(Object.keys(igUser));
+// console.log(Object.values(igUser));
 
+const course ={
+    courseName:"Sikha Dungaa..",
+    price :"$456",
+    courseInstructor:"Mai Khud !" 
+}
+
+const {courseInstructor:master} = course
+console.log(master);
