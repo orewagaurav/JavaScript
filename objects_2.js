@@ -9,7 +9,7 @@ fbUser.name ="Ravi Raj"
 fbUser.email = "ravirock@gmail.com"
 fbUser.loggedIn=false
 
-console.log(fbUser);
+// console.log(fbUser);
 
 const igUser ={
     name:"Gaurav Kumar",
@@ -27,16 +27,16 @@ const igUser ={
 
     }
 }
-console.log(igUser);
-console.log(igUser.details);
-console.log(igUser.details.userFullName.lastName);
-console.log(igUser.details.userDob.year);
+// console.log(igUser);
+// console.log(igUser.details);
+// console.log(igUser.details.userFullName.lastName);
+// console.log(igUser.details.userDob.year);
 
 const obj = {...fbUser,...igUser};
-console.log(obj);
+// console.log(obj);
 
 const obj2 = Object.assign({},fbUser,igUser);  //(target,src,src)
-console.log(obj2);
+// console.log(obj2);
 
 console.log(Object.keys(igUser));
 console.log(Object.values(igUser));
