@@ -18,5 +18,8 @@
         "titleBar.inactiveBackground": "#82c5d999",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#82c5d9"
+    "peacock.color": "#82c5d9",
+    "cSpell.words": [
+        "arrr"
+    ]
 }
