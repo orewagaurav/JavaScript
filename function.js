@@ -51,3 +51,11 @@ function handelObject(anyObject){
     return `User's name is ${anyObject.name} and his age is ${anyObject.age}`
 }
 console.log(handelObject(user));
+
+const arr =[1,2,3,4,5,6,7];
+function getArr(anyArr){
+    return anyArr[3];
+}
+console.log(getArr(arr));
+
+
