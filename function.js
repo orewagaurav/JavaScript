@@ -37,7 +37,7 @@ let f = loginUserMessage("hmlo");
 function calculateCartPrice(...num){
     return num;
 }
-console.log(calculateCartPrice(23,12,45,67));
+// console.log(calculateCartPrice(23,12,45,67));
 
 const user = {
     name:"Gaurav",
@@ -50,12 +50,25 @@ function handelObject(anyObject){
     if(!anyObject) return -1;
     return `User's name is ${anyObject.name} and his age is ${anyObject.age}`
 }
-console.log(handelObject(user));
+// console.log(handelObject(user));
 
 const arr =[1,2,3,4,5,6,7];
 function getArr(anyArr){
     return anyArr[3];
 }
-console.log(getArr(arr));
+// console.log(getArr(arr));
 
 
+//arrow function
+//  console.log(this);
+
+(function code(name){
+    //named IIFE
+    console.log(`Aaeye dekhte hai ${name}`);
+    
+})("Raunak");
+
+( (user)=>{//unnamed IIFE
+    console.log(`Hemlo ${user}`);
+})("Gaurav !"); 
+ 
