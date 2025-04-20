@@ -44,3 +44,21 @@
 //     d++;
 // } while (d==e);
 
+const arr = [1,2,3,4,56,67]
+// for(const i of arr){
+//     console.log(i);
+// }
+for (i=0;i<=arr.length;i++){
+    console.log(arr[i]);
+}
+
+const greeting = "Hello World"
+for(const i of greeting){
+    // if(i==" "){
+    //     continue;
+    // }
+    if(i==" "){
+        break;
+    }
+    console.log(i);
+}
