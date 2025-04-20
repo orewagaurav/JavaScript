@@ -63,3 +63,11 @@ for(const i of greeting){
     console.log(i);
 }
 
+//maps
+
+const map =new Map()
+map.set("IN","INDIA")
+map.set("USA","UNITED STATES OF AMERICA")
+map.set("UK","UNITED KINGDOM")
+
+console.log(map);
