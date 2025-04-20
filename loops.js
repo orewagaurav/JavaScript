@@ -101,6 +101,6 @@ const language = ["js","python","java","cpp","c","css"]
 //     console.log(i,i.length)
 // } )
 
-language.forEach( (item,index,arr)=>{
-    console.log(item,index,arr)
-} )
+// language.forEach( (item,index,arr)=>{
+//     console.log(item,index,arr)
+// } )
