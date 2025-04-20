@@ -12,12 +12,13 @@ const newNums2 = nums.filter( (i) =>{
 
 //map
 const map1 = nums.map((i)=> i+10)
-console.log(map1);
+// console.log(map1);
 
 //chaining
 
 const chain = nums
                 .map((i)=>i*10)
                 .map((i)=> i+1)
+                .filter((i)=> i>=25)
 
 console.log(chain);
