@@ -44,24 +44,25 @@
 //     d++;
 // } while (d==e);
 
-const arr = [1,2,3,4,56,67]
-// for(const i of arr){
+// const arr = [1,2,3,4,56,67]
+// // for(const i of arr){
+// //     console.log(i);
+// // }
+// for (i=0;i<=arr.length;i++){
+//     console.log(arr[i]);
+// }
+
+// const greeting = "Hello World"
+// for(const i of greeting){
+//     // if(i==" "){
+//     //     continue;
+//     // }
+//     if(i==" "){
+//         break;
+//     }
 //     console.log(i);
 // }
-for (i=0;i<=arr.length;i++){
-    console.log(arr[i]);
-}
 
-const greeting = "Hello World"
-for(const i of greeting){
-    // if(i==" "){
-    //     continue;
-    // }
-    if(i==" "){
-        break;
-    }
-    console.log(i);
-}
 
 //maps
 
@@ -70,4 +71,26 @@ map.set("IN","INDIA")
 map.set("USA","UNITED STATES OF AMERICA")
 map.set("UK","UNITED KINGDOM")
 
-console.log(map);
+// console.log(map);
+
+// for(const i of map){
+//     console.log(i);
+// }
+// for(const [i,j] of map){
+//     console.log(i,"=>",j);
+// }
+
+const obj ={
+    name:"Gaurav",
+    roll:"23",
+    location:"Noida",
+    work:"SWE"
+}
+//obect  is not iterable by for of
+// for(const i of obj){
+//     console.log(i);
+// }
+
+for(const i in obj){
+    console.log(`${i} is ${obj[i]}`);
+}
