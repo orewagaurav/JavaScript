@@ -62,3 +62,4 @@ for(const i of greeting){
     }
     console.log(i);
 }
+
