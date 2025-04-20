@@ -91,6 +91,16 @@ const obj ={
 //     console.log(i);
 // }
 
-for(const i in obj){
-    console.log(`${i} is ${obj[i]}`);
-}
+// for(const i in obj){
+//     console.log(`${i} is ${obj[i]}`);
+// }
+
+const language = ["js","python","java","cpp","c","css"]
+
+// language.forEach( function (i){
+//     console.log(i,i.length)
+// } )
+
+language.forEach( (i)=>{
+    console.log(i,"=>",i.length)
+} )
