@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Learning</title>
+</head>
+<style>
+    #id{
+        color:rgb(19, 174, 13);
+        background-color: rgb(13, 67, 115);
+        padding: 5px;
+    }
+</style>
+<body id = "id">
+    <ul class = "language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName){
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`;
+        document.querySelector(".language").appendChild(li);
+    }
+    addLang("Python");
+    addLang("Java");
+    addLang("c");
+    addLang("c++");
+
+    function addOptiLang(langName){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector(".language").appendChild(li);
+    }
+    addOptiLang("golang");
+    addOptiLang("C#");
+
+    //edit
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Rust"
+    const newElement = document.createElement("li");
+    newElement.textContent = "Rust";
+    secondLang.replaceWith(newElement)
+    
+</script>
+</html>
