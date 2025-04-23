@@ -1,7 +1,9 @@
 html{
     margin:0;
 }
-
+.main{
+    background-color: lightpink;
+}
 .home{
     color:black;
     background-color: aquamarine;
