@@ -1,8 +1,10 @@
 html{
     margin:0;
 }
-.body{
-    background-color:grey;
+
+.home{
+    color:black;
+    background-color: aquamarine;
 }
 span{
     display: block;
@@ -18,3 +20,16 @@ span{
     border:  2px solid black ;
     display:inline-block;
 }
+#grey {
+    background: grey;
+  }
+  
+#white {
+    background: white;
+  }
+#blue {
+    background: blue;
+  }
+#yellow {
+    background: yellow;
+  }
