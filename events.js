@@ -13,10 +13,8 @@ button3.addEventListener("mouseover",()=>{
     document.querySelector(".box").style.backgroundColor="green";
 })
 
-// button3.addEventListener("contextmenu",()=>{
-//     alert("Right click");
-// })
-
 document.addEventListener("keydown",(e)=>{
     console.log(e.key);
 })
+
+
