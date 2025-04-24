@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 4 | Gaurav Kumar</title>
+    <title>Number Guessing game | Gaurav Kumar</title>
 </head>
+<link rel = "stylesheet" href="styles.css"/>
 <body>
-    
+    <div id = "wrapper">
+        <h1>Number guessing game</h1>
+        <p>Try and Guess a random Number between 1 and 100.</p>
+        <p>You have 10 attempts to guess the right number.</p>
+    </br>
+        <form class ="form">
+            <label for = "guessField" id ="guess">Guess a Number</label>
+            <input type="text" id="guessField" class = "guessField">
+            <input type="submit" id="subt" class = "guessSubmit" value= "Submit guess">
+        </form>
+
+        <div class ="resultParas">
+            <p>Previous Guess: <span class ="guesses"></span></p>
+            <p>Guesses remaining: <span class ="lastResult">10</span></p>
+            <p class ="lowOrHi"></p>
+        </div>
+    </div>
+    <script src ="script.js" ></script>
 </body>
 </html>
