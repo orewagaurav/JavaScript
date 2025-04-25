@@ -1,5 +1,17 @@
-/* button{
+body{
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  height: 100vh;
+  margin: 0px;
+  flex-direction: column;
+  text-align: center;
+}
+button{
+  height:30px;
+  width: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 2px solid black;
+}

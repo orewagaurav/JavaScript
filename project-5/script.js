@@ -6,12 +6,21 @@ const randomColor  = function(){
     }
     return color;
 }
+
+let intervalId;
 const startChangingColor = function(){
-    document.querySelector("body").style.backgroundColor = randomColor()
-    document.querySelector("body").style.color = randomColor()
+    function ChangeBgColor(){
+        document.querySelector("body").style.backgroundColor = randomColor()
+        document.querySelector("body").style.color = randomColor()
+    }
+    if(!intervalId){
+        intervalId = setInterval(ChangeBgColor,1000);
+    }
+    
 }
 const stopChangingColor = function(){
-
+    clearInterval(intervalId);
+    intervalId =null;
 }
 
 document.querySelector("#start").addEventListener("click",startChangingColor);
