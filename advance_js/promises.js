@@ -65,3 +65,55 @@ promiseFour.then( (user)=>{
 }).catch(function(error){
     console.log(error); 
 }).finally(()=>(console.log("promise is resolved or rejected")))
+
+//promise 5
+const promiseFive = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true
+        if(!error){
+            resolve({
+            lan:"javaScript",
+            age:"infinity"
+            })
+        }else{
+            reject("Bhari Galti hogya malik")
+        }
+    },1000)
+});
+async function consumePromiseFive(){
+    try{
+        const response = await promiseFive
+        console.log(response);  
+    }catch{
+        console.log("payara sa error");
+        
+    }
+}
+
+consumePromiseFive();
+
+//fetch
+// async function getAllUsers(){
+//     try{
+//         const response = await fetch("https://api.github.com/users/orewagaurav")
+
+//         const data = await response.json()
+//         console.log(data);
+//     }catch{
+//         console.log("E: ",error);
+//     }
+// }
+// getAllUsers()
+
+fetch("https://api.github.com/users/orewagaurav")
+.then((response)=>{
+    return response.json()
+})
+.then((data)=>{
+    console.log(data);
+})
+.catch((error)=>(console.log("error")))
+.finally(function(){
+    console.log("Kaam ho rha hai ");
+    
+})
