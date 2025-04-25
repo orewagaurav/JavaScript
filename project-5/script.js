@@ -7,7 +7,8 @@ const randomColor  = function(){
     return color;
 }
 const startChangingColor = function(){
-    
+    document.querySelector("body").style.backgroundColor = randomColor()
+    document.querySelector("body").style.color = randomColor()
 }
 const stopChangingColor = function(){
 
