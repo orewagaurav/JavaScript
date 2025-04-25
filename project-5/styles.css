@@ -1,4 +1,6 @@
 body{
+  color:red;
+  background: #1b0d1e;
   display: flex;
   justify-content: center;
   align-items: center;
