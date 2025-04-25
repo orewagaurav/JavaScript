@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<style>
+    body{
+        background:grey;
+    }
+</style>
+<body>
+    <div class="api">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut adipisci vero aperiam quibusdam qui culpa atque quasi vitae iure minima tempora distinctio, ex ratione? Earum, laudantium? Animi consectetur autem illum eius voluptates modi perspiciatis saepe aliquid repellat reiciendis, dolores labore, accusantium fugiat adipisci dignissimos.</div>
+</body>
+<script>
+    const requestUrl = "https://api.github.com/users/orewagaurav"
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestUrl);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);    
+    }
+    
+    xhr.send()
+
+</script>
+</html>
