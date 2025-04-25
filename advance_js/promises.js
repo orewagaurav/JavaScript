@@ -39,3 +39,29 @@ const promiseThree = new Promise(function(resolve,reject){
 promiseThree.then(function(user){
     console.log(user.name);
 })
+
+
+//promise 4
+const promiseFour = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = false;
+        if(!error){
+            resolve({
+                username:"gaurav",
+                password:"abcd@123"
+            })
+        }else{
+            reject("Error: Something went wrong")
+        }
+        
+    },1000)
+})
+
+promiseFour.then( (user)=>{
+    console.log(user);
+    return user.username; 
+}).then((username)=>{
+    console.log(username);
+}).catch(function(error){
+    console.log(error); 
+}).finally(()=>(console.log("promise is resolved or rejected")))
