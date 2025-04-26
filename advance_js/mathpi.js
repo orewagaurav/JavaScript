@@ -1,20 +1,18 @@
-const descripter = Object.getOwnPropertyDescriptor(Math,"PI")
+const descripter = Object.getOwnPropertyDescriptor(Math, "PI");
 
 console.log(descripter);
 
 const orewa = {
-    name: 'Gaurav Kumar',
-    age:20,
-    work:"SWE"
-}
+    name: "Gaurav Kumar",
+    age: 20,
+    work: "SWE",
+};
 
 // console.log(Object.getOwnPropertyDescriptor(orewa,"name"));
 
-Object.defineProperty(orewa,'name',{
+Object.defineProperty(orewa, "name", {
     writable: false,
-    enumerable:false,
+    enumerable: false,
+});
 
-})
-
-console.log(Object.getOwnPropertyDescriptor(orewa,"name"));
-
+console.log(Object.getOwnPropertyDescriptor(orewa, "name"));
