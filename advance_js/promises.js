@@ -105,22 +105,15 @@ consumePromiseFive();
 // }
 // getAllUsers()
 
-// fetch("https://api.github.com/users/orewagaurav")
-// .then((response)=>{
-//     return response.json()
-// })
-// .then((data)=>{
-//     console.log(data);
-// })
-// .catch((error)=>(console.log("error")))
-// .finally(function(){
-//     console.log("Kaam ho rha hai ");
-    
-// })
-
-fetch("https://api.github.com/users/orewagaurav").then((response)=>{return response.json()}).then((data)=>{console.log(data)})
-.catch((error)=>(console.log(error)))
+fetch("https://api.github.com/users/orewagaurav")
+.then((response)=>{
+    return response.json()
+})
+.then((data)=>{
+    console.log(data);
+})
+.catch((error)=>(console.log("error")))
 .finally(function(){
-    console.log("kaam ho rha hai");
+    console.log("Kaam ho rha hai ");
     
 })
